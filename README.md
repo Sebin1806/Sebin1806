@@ -1,4 +1,5 @@
 ## Hi there 👋
+![My GIF](https://github.com/Sebin1806/Sebin1806/blob/main/bg.gif)
 
 <!--
 **Sebin1806/Sebin1806** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
