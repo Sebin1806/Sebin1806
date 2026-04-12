@@ -13,4 +13,7 @@ Here, you'll find:
 Pull up a chair, explore my work, and let's create something amazing together! 💻✨
 
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Sebin1806&show_icons=true&theme=tokyonight&hide_border=true)
+
+## 🐍 My Contributions Snake
+
+![Snake animation](https://raw.githubusercontent.com/Sebin1806/Sebin1806/output/github-snake.svg)
