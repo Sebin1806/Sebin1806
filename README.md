@@ -13,4 +13,4 @@ Here, you'll find:
 Pull up a chair, explore my work, and let's create something amazing together! 💻✨
 
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Sebin1806&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Sebin1806&show_icons=true&theme=tokyonight&hide=issues)
