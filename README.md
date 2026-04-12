@@ -1,6 +1,6 @@
 ## Welcome to my corner of the internet 🌟
 
-![My GIF](https://github.com/Sebin1806/Sebin1806/blob/main/Background.png)
+![Demo](bg.gif)
 
 Hi there! I'm **Sebin**, a passionate coder and tech enthusiast 🚀.  
 I love building projects, exploring new technologies, and sharing what I learn along the way.  
