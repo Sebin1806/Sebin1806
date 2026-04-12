@@ -1,6 +1,6 @@
 ## Welcome to my corner of the internet 🌟
 
-![My GIF](https://github.com/Sebin1806/Sebin1806/blob/main/bg.gif)
+![My GIF](https://github.com/Sebin1806/Sebin1806/blob/main/Gen-4 Turbo generate an video from this image 741835511.mp4)
 
 Hi there! I'm **Sebin**, a passionate coder and tech enthusiast 🚀.  
 I love building projects, exploring new technologies, and sharing what I learn along the way.  
