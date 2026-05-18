@@ -13,7 +13,3 @@ Here, you'll find:
 Pull up a chair, explore my work, and let's create something amazing together! 💻✨
 
 
-
-## 🐍 My Contributions Snake
-
-![Snake animation](https://raw.githubusercontent.com/Sebin1806/Sebin1806/output/github-snake.svg)
