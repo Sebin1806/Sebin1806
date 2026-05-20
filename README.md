@@ -1,5 +1,3 @@
-![Demo](bg.gif)
-
 # 💫 About Me:
 ░▒▓█ ABOUT ME █▓▒░<br><br>➤ Name        : Sebin S  <br>➤ Profession  : AI & DS Student  <br>➤ Passion     : Coding + Creativity  <br>➤ Tech Stack  : Python • AI • Web Tech  <br>➤ Current Aim : Building advanced AI projects  <br>➤ Vision      : Innovate with intelligence 🚀
 
