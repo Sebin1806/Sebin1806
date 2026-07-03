@@ -1,43 +1,54 @@
-name: GitHub Snake Game
+name: Natural Contribution Streak
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-
+    # Runs every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */12 * * *' 
   workflow_dispatch:
 
-  push:
-    branches:
-      - main
-
 jobs:
-  generate:
+  commit:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-
+      
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Generate Snake Animation
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy to Output Branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: output
-          commit_message: "Update snake animation [skip ci]"
+        
+      - name: Make natural updates
+        run: |
+          # 30% chance to skip this execution entirely. 
+          # This leaves unpredictable gaps in the day, avoiding robotic, robotic fixed-interval schedules.
+          if [ $((RANDOM % 10)) -lt 3 ]; then
+            echo "Skipping this run for a more natural look."
+            exit 0
+          fi
+          
+          # CRITICAL: Configure Git to use YOUR GitHub user identity.
+          # This ensures the commits count as YOUR activity and light up the green dots!
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          
+          # Decide a random number of commits to make (between 1 and 5)
+          NUM_COMMITS=$(( (RANDOM % 5) + 1 ))
+          echo "Simulating $NUM_COMMITS natural commits..."
+          
+          for i in $(seq 1 $NUM_COMMITS); do
+            # Add a slight random sleep (1 to 5 seconds) so timestamps look hand-typed
+            sleep $(( (RANDOM % 5) + 1 ))
+            
+            # Write unique data to the tracker file
+            echo "Natural update variant-$RANDOM at $(date)" >> streak.txt
+            
+            git add streak.txt
+            
+            # Use varying, standard-looking commit messages to look authentic
+            MESSAGES=("chore: sync workspace" "fix: minor typo" "docs: update registry" "chore: system update" "refactor: clean up structure")
+            RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+            
+            git commit -m "$RANDOM_MSG"
+          done
+          
+          # Push all variations generated in this session back to GitHub
+          git push
