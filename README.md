@@ -23,10 +23,3 @@
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
-
-
-<div align="center">
-
-  
-  ![snake gif](https://github.com/Sebin1806/Sebin1806/blob/output/github-snake-dark.svg)
-</div>
